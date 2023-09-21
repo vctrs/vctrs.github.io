@@ -24,6 +24,8 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
     
 }
+ $(document).ready(function() {
+     
 if (detectDevice() === 'mobile') {
     document.getElementById("iframe").setAttribute("src", "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FCU2Acfi0yJQdV8cqqd52Qd%2FSEPAR%3Ftype%3Ddesign%26node-id%3D478-43%26t%3D75ac6CHBjhDHDpgz-1%26scaling%3Dcontain%26page-id%3D478%253A42%26starting-point-node-id%3D478%253A43%26mode%3Ddesign%26hide-ui=1");
     console.log("mobile");
@@ -31,7 +33,7 @@ if (detectDevice() === 'mobile') {
     document.getElementById("iframe").setAttribute("src", "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FCU2Acfi0yJQdV8cqqd52Qd%2FSEPAR%3Ftype%3Ddesign%26node-id%3D387-38%26t%3DrqFjrk4KQ3ly00nl-1%26scaling%3Dcontain%26page-id%3D378%253A167%26starting-point-node-id%3D387%253A38%26mode%3Ddesign%26hide-ui=1");
     console.log("desktop");
 }
-    
+    });
 </script>  
 
 
